@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+:root {
+    --main-white: #eee;
+    --main-gold: #f9b604;
+    --mob-nav-color: #262626;
+    --link-hover: chocolate;
+    --main-font: #838383;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+    font-family: 'Roboto', sans-serif !important;
+    /*position: relative;*/
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white)
+}
+
+#hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+#hero .overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#hero video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+#hero .intro-text {
+    position: relative;
+    z-index: 3;
+    color: white;
+    padding-left: 40px;
+    padding-top: 170px;
+    font-family: 'Roboto';
+}
+
+#hero .intro-text img {
+    display: none;
+}
+
+#hero .intro-text h1 {
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#hero .intro-text h1 span:first-child {
+    color: var(--main-gold);
+}
+
+#hero .intro-text p:first-of-type {
+    font-size: 1.75rem;
+}
+
+
+
+#hero .intro-text p a:last-child {
+    color: var(--main-gold);
+    text-decoration: none;
+}
+
+#hero .intro-text p a[href ^="mailto"] {
+    color: white;
+}
+
+#hero .intro-text h6 {
+    font-size: 1.75rem;
+}
+
+#hero .intro-text .socials {
+    padding: 50px 0;
+}
+
+#hero .intro-text .socials i {
+    padding: 0 25px 0 0px;
+    font-size: 40px;
+    transition: all 0.2s ease-in;
+}
+
+#hero .intro-text .socials i:hover {
+
+}
+
+i[class ^="fa-brands"] {
+    font-size: 40px;
+    padding: 10px 25px 0 0px;
+    transition: all 0.2s ease-in;
+}
+
+i[class ^="fa-brands"]:hover {
+    transform: translateY(-5px);
+    color: var(--main-gold);
+}
+
+/* ========= Shop Introduction ============ */
+
+#index {
+    height: auto;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    padding: 25px 0px;
+}
+
+#index .centering {
+    text-align: center;
+    /*padding: 2%;*/
+}
+
+#index .centering h1 {
+    padding-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: var(--main-gold);
+}
+
+h2, h5 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#index h5 {
+    font-family: Roboto;
+    margin-bottom: 30px;
+}
+
+#index p {
+    font-family: Roboto;
+}
+
+#index .service-card {
+    padding: 25px;
+}
+
+#index .service-card h4 {
+    color: var(--main-gold);
+}
+
+#index .service-card i {
+    font-size: 3rem;
+    color: white;
+    padding: 15px;
+}
+
+#index .service-card p {
+    font-size: 0.8rem;
+}
+
+#index .container .tagline {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 70px 0;
+}
+
+#index a {
+    color: var(--main-gold);
+    padding: 10px 20px;
+}
+
+.home-image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    transition: 1s ease-in;
+}
+
+/* Testimonials Section */
+
+.testimonial {
+    background-color: black;
+    color: white;
+    padding-bottom: 300px;
+}
+
+.quote {
+    padding: 20px 10px;
+    text-align: center;
+
+}
+
+.testimonial p {
+    font-size: 0.9rem;
+    font-family: 'Roboto';
+    /*border: 2px dashed lightgray;*/
+    border-top: none;
+    padding: 10px;
+    /*font-style: italic;*/
+}
+
+.testimonial h5 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px 0;
+    color: var(--main-gold);
+}
+
+
+.testimonial i {
+    font-size: 1.5rem;
+    margin: 0 auto;
+    padding: 0px 0;
+    color: var(--main-gold);
+}
+
+#footer-relative {
+    position: relative;
+}
+
+/*MARQUEE STYLING HERE*/
+
+.marquee {
+    background-color: #111;
+    color: white;
+    width: 100vw;
+    height: 20vh;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================== RESPONSIVE SITE HERE =================== */
+
+@media(max-width: 480px){
+
+    /*#hero {*/
+    /*    background: url('../assets/images/piano-background.jpg');*/
+    /*    background-repeat: no-repeat;*/
+    /*    background-size: cover;*/
+    /*    background-position: -250px 0;*/
+    /*    position: relative;*/
+    /*}*/
+
+    #hero .intro-text {
+        transform: translateX(0);
+    }
+
+
+    /*#hero video {*/
+    /*    display: none;*/
+    /*}*/
+
+
+    #hero .intro-text {
+        padding: 0;
+        text-align: center;
+        width: 100vw;
+        padding: 0 10px;
+    }
+
+    #hero .intro-text img {
+        width: 100%;
+        display: inline-block;
+        transform: translateY(-70px);
+    }
+
+    #hero .intro-text h1 {
+        font-size: 8vw;
+    }
+
+    #hero .intro-text h6 {
+        font-size: 4vw;
+        margin-top: 20px;
+    }
+
+    #hero .intro-text .socials {
+        padding: 30px 0;
+    }
+
+    #hero .intro-text .socials i {
+        padding: 0 20px;
+        font-size: 20px;
+    }
+
+    /* ========= Shop Section Mobile ============ */
+
+    .shop-home h1 {
+        font-size: 2rem;
+    }
+
+    .shop-home .intro-box p:first-child {
+        font-size: 1.25rem;
+    }
+
+    .shop-home .intro-box p:first-child > i {
+        font-size: 10px;
+        transform: translateY(-12px);
+
+    }
+
+    .shop-home .intro-box p {
+        font-size: 0.75rem;
+    }
+
+    .quote p {
+        font-size: 0.75rem;
+    }
+
+    /* ============= Footer Section Mobile ============== */
+
+}
+
+
+
+

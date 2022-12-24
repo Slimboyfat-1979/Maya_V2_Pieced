@@ -1,0 +1,243 @@
+#next {
+    height: auto;
+    width: 100vw;
+    /*margin-top: 3%;*/
+}
+
+.img {
+    background: url("../assets/images/band_01.jpg");
+    width: 100vw;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0 , 0, 0.6);
+}
+
+.text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Dosis';
+}
+
+.text-container h1 {
+    color: white;
+    position: relative;
+    z-index: 2;
+}
+
+.text-container a {
+    padding: 10px 25px;
+    background-color: #f9b604;
+    color: white;
+    position: relative;
+    z-index: 3;
+    border-radius: 30px;
+    margin-top: 25px;
+}
+
+p a {
+    color: blue;
+}
+
+.row {
+    font-family: Dosis;
+}
+
+.team{
+    height: auto;
+    padding: 2% 2.5%;
+    font-family: 'Dosis', arial;
+    margin-top: 20px;
+}
+
+.team .team-blurb {
+    text-align: center;
+    color: var(--main-font);
+    line-height: 2;
+}
+
+.team .team-blurb h1 {
+    font-size: 3.5rem;
+}
+
+.team-container {
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.team-members {
+    padding: 50px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.member {
+    text-align: center;
+    width: 25rem;
+    height: auto;
+    background: inherit;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 30px;
+    margin: 20px;
+    position: relative;
+
+}
+
+.member img {
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    display: block;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    filter: brightness(70%);
+
+}
+
+.member-text {
+    padding: 10px 0;
+    font-size: 13px;
+    color: var(--main-font);
+}
+
+.member-text p {
+    margin-top: 10px;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25rem;
+    background-color: rgba(0,0,0,0.6);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    transition-property: opacity;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    color: white;
+    overflow: auto;
+    font-size: 12px;
+}
+
+.img-overlay p {
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.box p {
+    transform: translateY(10px);
+    line-height: 2;
+}
+
+.img-overlay:hover {
+    opacity: 1;
+}
+
+.img-overlay > * {
+    transform: translateY(20px);
+    transition-property: transform;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+}
+
+.img-overlay:hover > * {
+    transform: translateY(0);
+}
+
+.team-members hr {
+    display: none;
+}
+
+#footer-relative {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ================== RESPONSIVE SITE HERE =================== */
+
+@media(max-width: 480px) {
+
+    .team {
+        padding: 15% 0;
+    }
+
+    .team .team-blurb h1 {
+        font-size: 2rem;
+    }
+
+    .team .team-blurb p {
+        font-size: 0.75rem;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .team .team-container {
+        width: 90%;
+        overflow-x: hidden;
+        margin-top: 0;
+        height: auto
+    }
+
+    .team-members {
+        padding: 0;
+        border-radius: 20px;
+    }
+
+    .team-members .member:last-child {
+        border: none;
+    }
+
+    .member {
+        box-shadow: none;
+        /* border-bottom: 2px dotted var(--main-font); */
+    }
+
+    .member hr {
+        width: 20%;
+        margin: 0 auto;
+        border-style: dotted none none;
+        height: 0;
+        border-color: var(--main-font);
+        border-width: 5px;
+    }
+
+    .img-overlay p {
+        font-size: 0.7rem;
+        padding: 0 25px;
+    }
+
+    .img-overlay .dom-bio {
+        transform: translateY(195px);
+        padding: 10px 20px;
+    }
+
+}
+
+
+
+

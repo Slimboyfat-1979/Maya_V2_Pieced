@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap');
+
+.btn {
+    width: 50%;
+}
+
+#next {
+    height: auto;
+    width: 100vw;
+    margin-top: 4%;
+    background-color: black;
+    color: white;
+    padding-bottom: 300px;
+    position: relative;
+
+}
+
+/*background: url("../assets/images/band_01.jpg");*/
+/*width: 100vw;*/
+/*height: 50vh;*/
+/*background-size: cover;*/
+/*background-position: 0 -600px;*/
+/*background-repeat: no-repeat;*/
+/*position: relative;*/
+/*z-index: 1;*/
+
+.img {
+    background: url("../assets/images/piano-background.jpg");
+    width: 100vw;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0 , 0, 0.6);
+}
+
+.text-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Roboto';
+    padding-top: 270px;
+}
+
+.text-container h1 {
+    color: var(--main-gold);
+    position: relative;
+    z-index: 2;
+}
+
+.text-container h4 {
+    color: white;
+    z-index: 2;
+}
+
+p a {
+   color: blue;
+}
+
+.container {
+    font-family: Roboto;
+}
+
+.container a {
+    color: var(--main-gold);
+    text-decoration: underline;
+}
+
+h2, h1 {
+    color: var(--main-gold);
+}
+
+.row p span {
+    color: var(--main-gold);
+}
+
+.row a {
+    color: white;
+}
+
+/*============ Accordian Styling =================*/
+
+.accordion {
+    font-family: Roboto !important;
+
+}
+
+.accordion-button {
+    color: var(--main-gold) !important;
+    background-color: black !important;
+}
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+}
+
+/* ================== RESPONSIVE SITE HERE =================== */
+
+@media(max-width: 480px) {
+
+}
+
+
+
+
+
+

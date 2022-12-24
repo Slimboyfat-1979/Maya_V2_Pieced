@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap');
+
+
+/*.video {*/
+/*     width: 100vw;*/
+/*     height: 400px;*/
+/*}*/
+
+/*.video video {*/
+/*     width: 100%;*/
+/*     height: 100%;*/
+/*     object-fit: cover;*/
+/*}*/
+
+.container {
+     padding-top: 1px;
+}
+
+h3 {
+     font-family: 'Roboto';
+}
+
+#next {
+     height: auto;
+     width: 100vw;
+     margin-top: 4.5%;
+     background-position: center;
+     color: white !important;
+     position: relative;
+     background: black;
+     padding-bottom: 300px;
+}
+
+.img {
+     background: url("../assets/images/piano-background.jpg");
+     width: 100vw;
+     height: 50vh;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     position: relative;
+     z-index: 1;
+}
+
+.overlay {
+     position: absolute;
+     z-index: 2;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background-color: rgba(0, 0 , 0, 0.6);
+}
+
+.text-container {
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     font-family: 'Roboto';
+     padding-top: 270px;
+}
+
+.text-container h1 {
+     color: white;
+     position: relative;
+     z-index: 2;
+     color: var(--main-gold);
+     font-family: Roboto;
+}
+
+.text-container h4 {
+     color: white;
+     z-index: 2;
+}
+
+.row {
+     margin: 50px auto
+}
+
+.services {
+     margin: 90px auto;
+     text-align: center;
+}
+
+h1 {
+     font-family: 'Roboto';
+     letter-spacing: 1px;
+     color: white;
+}
+
+h3 {
+     color: var(--main-gold);
+}
+
+
+
+.icon {
+     border: 1px solid var(--main-gold);
+      height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     margin-bottom: 10px;
+     font-size: 1.5rem;
+     margin: 0 auto 20px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 35px;
+     color: var(--main-gold);
+}
+
+p {
+     line-height: 30px;
+     color: white;
+     font-family: 'Roboto';
+}
+
+#footer-relative {
+ position: absolute;
+}
+
+
+
+/* ================== RESPONSIVE SITE HERE =================== */
+
+@media(max-width: 480px) {
+
+     p {
+          font-size: 0.75rem;
+     }
+}
+
+  
+
+

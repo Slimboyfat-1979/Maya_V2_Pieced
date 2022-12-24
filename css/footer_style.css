@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap');
+
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*body {*/
+/*    line-height: 1.5;*/
+/*}*/
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer {
+    background-color: white !important;
+    padding-top: 25px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 25px;
+
+
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.footer-col h4 {
+    font-size: 15px;
+    color: black !important;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-family: Roboto;
+}
+
+.footer .row {
+    padding: 0;
+}
+
+.footer ul li a {
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.social-links i {
+    padding: 0 20px;
+    font-size: 1.5rem;
+    color: black;
+}

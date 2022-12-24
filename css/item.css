@@ -1,0 +1,33 @@
+#next {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 5.5%;
+}
+
+.container {
+    padding:  100px 0;
+}
+.img-responsive {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.img-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ================== RESPONSIVE SITE HERE =================== */
+
+@media(max-width: 480px) {
+
+}
+
+
+
+
+
+

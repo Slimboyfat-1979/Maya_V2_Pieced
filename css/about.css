@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.main {
+    height: 120vh;
+    width: 100vw;
+    /*margin-top: 5.5%;*/
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 200px;
+}
+
+
+.becks h4, .deo h4 {
+    margin-top: 15px;
+}
+
+.becks p, .deo p {
+    color: var(--main-gold);
+}
+
+.photo > .becks, .photo > .deo {
+    color: white;
+    text-align: center;
+}
+
+
+.main img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 40px;
+    /*margin-right: 70px;*/
+    padding: 10px;
+    border: 2px solid var(--main-gold);
+}
+
+.main .photo {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main h6 {
+    display: block;
+    transform: translateY(250px) translateX(-330px);
+    font-size: 2rem;
+    font-family: 'Rock Salt', cursive;
+    color: white;
+}
+
+.all-text {
+    width: 600px;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+.all-text h4 {
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.all-text h1 {
+    font-size: 60px;
+    color: var(--main-gold);
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+}
+
+.all-text p {
+    font-family: 'Roboto';
+    font-size: 16px;
+    color: white;
+    line-height: 30px;
+    margin-bottom: 35px;
+}
+
+.btn {
+    padding: 0;
+}
+
+.btn a {
+    color: var(--main-gold);
+    padding: 0 10px 0 0;
+    text-decoration: underline;
+}
+
+.btn button:hover {
+    background-color: #111111;
+    color: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+a {
+    color: inherit;
+    background: inherit;
+}
+
+#footer-relative {
+    position: relative;
+}
+
+/* ================== RESPONSIVE SITE HERE =================== */
+
+@media(max-width: 480px) {
+
+    .main {
+        flex-direction: column;
+    }
+
+    .photo {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+

@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+#next {
+    height: 140vh;
+    width: 100vw;
+    margin-top: 3%;
+    background: black;
+    padding: 200px 0;
+    color: white;
+    font-family: Roboto;
+}
+
+.list-unstyled {
+    padding: 0 !important;
+    text-align: left;
+}
+
+h2, label {
+    color: var(--main-gold);
+}
+
+input[type="submit"] {
+    background: var(--main-gold);
+    border: none;
+}
+
+input[type=submit]:hover {
+    background: #f9b604;
+}
+
+#footer-relative {
+    position: relative;
+}
+
+
+/* ================== RESPONSIVE SITE HERE =================== */
+
+@media(max-width: 480px) {
+    #next {
+        padding-top: 0;
+
+    }
+}

@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Roboto&display=swap');
+
+
+:root {
+    --main-white: #eee;
+    --main-gold: gold;
+    --mob-nav-color: #262626;
+    --link-hover: chocolate;
+    --main-font: #838383;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden !important;
+    max-width: 100vw !important;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white)
+}
+
+.ham-wrap, #mob-nav {
+    display: none;
+}
+
+
+#next {
+    margin-top: 9.3vh;
+}
+
+
+#headerNav {
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    top: 0;
+    background-color: black;
+    padding: 1% 2%;
+    transition: 0.3s ease-in;
+}
+
+#headerNav.sticky {
+    background-color: black;
+}
+
+#headerNav nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#headerNav nav img {
+    width: 15%;
+    height: 15%;
+}
+
+#headerNav nav ul {
+    display: flex;
+    margin-bottom: 0;
+}
+
+#headerNav ul li {
+    padding: 0 10px;
+    list-style: none;
+}
+
+#headerNav nav ul li a {
+    text-decoration: none;
+    color: var(--main-white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+#headerNav nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-gold);
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+#headerNav nav ul li a:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+}
+
+#next {
+    height: auto;
+    width: 100vw;
+    padding: 2% 3%;
+    font-family: Dosis;
+}
+
+#next a {
+    color: black;
+}
+
+.carousel-item img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+#next h1 {
+    padding: 10px;
+    text-align: center !important;
+}
+
+#next p {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.next-row {
+    height: 100px;
+    width: 100px;
+}
+
+.product-contain {
+    margin: 50px auto;
+    width: 90%;
+    text-align: center;
+}
+
+.product-contain img {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.product {
+    padding-bottom: 50px;
+}
+
+.product p {
+    padding: 0 !important;
+}
+
+.product a {
+    margin-top: 20px;
+}
+
+.product p + a:hover {
+    color: white !important;
+}
+
+.product :last-child {
+    color: white !important;
+}
+
+.product_menu {
+    width: 60%;
+    margin: 0 auto;
+    font-family: Dosis;
+}
+
+.product_menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product_menu ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#marquee {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: auto;
+}
+
+.marquee {
+    background-color: #111;
+    color: white;
+    width: 100vw;
+    height: 20vh;
+    overflow: hidden;
+}
+
+.marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling 20s linear infinite;
+}
+
+@keyframes scrolling {
+    0% {transform: translateX(0vw);}
+    100% {transform: translateX(-180vw)}
+}
+
+.marquee-content li {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    align-items: center;
+    width: 20vw;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.marquee-content li img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
+
+
+/*=================MARQUEE CSS STYLING HERE*================*/
+
+
+
+/* FOOTER SECTION HERE */
+
+.footer {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: var(--mob-nav-color);
+    color: var(--main-white);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer .foot-wrapper {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer .foot-wrapper > .box h3  {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* ================== RESPONSIVE SITE HERE =================== */
+
+@media(max-width: 480px){
+
+    .ham-wrap {
+        display: block;
+    }
+
+    body, html {
+        max-width: 100vw !important;
+        overflow-x: hidden !important;
+    }
+
+    #next {
+        margin-top: 9vh;
+    }
+
+    /* #hero {
+        background: url('assets/images/acoustic.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -250px 0;
+        position: relative;
+    } */
+
+    #hero .intro-text {
+        transform: translateX(0);
+    }
+
+    #hero #headerNav {
+        display: none;
+    }
+
+    #hero #mob-nav {
+        display: flex;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--mob-nav-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0.9;
+        transform: translateY(-100%);
+        transition: transform 0.7s ease-in;
+    }
+
+    #hero #mob-nav.active {
+        transform: translateY(0);
+    }
+
+    #hero #mob-nav ul {
+        text-align: center;
+    }
+
+    #hero #mob-nav ul li {
+        list-style: none;
+        margin: 40px;
+    }
+
+    #hero #mob-nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: bolder;
+        font-family: 'Nothing You Could Do', cursive;
+        position: relative;
+        padding: 3px 0;
+        filter: brightness(6);
+    }
+
+    #hero video {
+        display: none;
+    }
+
+    #hero .ham-wrap {
+        background-color: black;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        height: 9%;
+        transition: background-color 0.3s ease-in;
+    }
+
+    #hero .ham-wrap img {
+        width: 40%;
+        transform: translate(138px, 25px);
+    }
+
+    /* #hero .ham-wrap.sticky {
+        background-color: var(--mob-nav-color);
+    } */
+
+    #hero .ham-wrap .hamburger {
+        width: 30px;
+        height: 20px;
+        background-color: transparent;
+        position: absolute;
+        top: 26px;
+        left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+    }
+
+    #hero .hamburger .line {
+        background-color: gold;
+        height: 2px;
+        width: 100%;
+    }
+
+    #hero .hamburger .line-1,
+    #hero .hamburger .line-2,
+    #hero .hamburger .line-3 {
+        transition: all 0.3s ease-in;
+    }
+
+    #hero .hamburger.active .line-1 {
+        transform-origin: right;
+        transform: rotate(-45deg) translate(3px ,-5px);
+    }
+
+    #hero .hamburger.active .line-2 {
+        opacity: 0;
+    }
+
+    #hero .hamburger.active .line-3 {
+        transform: rotate(45deg) translate(-7px, -11px);
+    }
+
+    #hero .intro-text {
+        padding: 0;
+        text-align: center;
+        width: 100vw;
+        padding: 0 10px;
+    }
+
+    #hero .intro-text img {
+        width: 100%;
+        display: inline-block;
+        transform: translateY(-70px);
+    }
+
+    #hero .intro-text h1 {
+        font-size: 8vw;
+    }
+
+    #hero .intro-text h6 {
+        font-size: 4vw;
+        margin-top: 20px;
+    }
+
+    #hero .intro-text .socials {
+        padding: 30px 0;
+    }
+
+    #hero .intro-text .socials i {
+        padding: 0 20px;
+        font-size: 20px;
+    }
+
+    /* ========= Shop Section Mobile ============ */
+
+    .shop-home h1 {
+        font-size: 2rem;
+    }
+
+    .shop-home .intro-box p:first-child {
+        font-size: 1.25rem;
+    }
+
+    .shop-home .intro-box p:first-child > i {
+        font-size: 10px;
+        transform: translateY(-12px);
+
+    }
+
+    .shop-home .intro-box p {
+        font-size: 0.75rem;
+    }
+
+    /* ============= Footer Section Mobile ============== */
+
+
+    .footer .foot-wrapper {
+        flex-direction: column;
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
+    .footer .foot-wrapper .box {
+        margin: 15px 0;
+    }
+
+    .footer .foot-wrapper .box p {
+        margin: 0;
+    }
+
+    .footer .foot-wrapper .box-2 p {
+        display: inline;
+        padding: 0 4px;
+    }
+
+    .footer .foot-wrapper > .box h3 {
+        margin-bottom: 0;
+    }
+
+}
+
+
+
+
